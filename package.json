@@ -16,7 +16,8 @@
     "watch:ts": "tsc --watch",
     "watch:sass": "sass --watch src/styles:src/styles --no-source-map",
     "watch:css": "postcss src/styles/*.css --watch -d build/styles",
-    "watch": "npm-run-all --parallel watch:sass watch:css watch:ts"
+    "watch": "npm-run-all --parallel watch:sass watch:css watch:ts",
+    "prepare": "npm run build"
   },
   "dependencies": {
     "@awesome.me/kit-b706b5e040": "^1.0.14",

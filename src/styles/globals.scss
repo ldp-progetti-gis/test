@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --rs-primary-50: #f2feff;
+  --rs-primary-100: #b0e1e8;
+  --rs-primary-200: #77c4d1;
+  --rs-primary-300: #46a5b8;
+  --rs-primary-400: #1f89a1;
+  --rs-primary-500: #006e89;
+  --rs-primary-600: #006a87;
+  --rs-primary-700: #006482;
+  --rs-primary-800: #005c7a;
+  --rs-primary-900: #005270;
+
+  --ldp-color: #006e89
+}
+
+@layer base {
+  body {
+    @apply  w-full h-full relative min-h-screen flex flex-col text-slate-800;
+
+    * {
+      @apply box-border;
+    }
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-medium text-slate-900;
+  }
+
+  h1 {
+    @apply text-5xl;
+  }
+
+  h2 {
+    @apply text-4xl;
+  }
+
+  h3 {
+    @apply text-3xl;
+  }
+
+  h4 {
+    @apply text-2xl;
+  }
+
+  h5 {
+    @apply text-xl;
+  }
+
+  h6 {
+    @apply text-base;
+  }
+
+  /*
+   *  SCROLLBAR
+   */
+
+  /* width */
+  ::-webkit-scrollbar {
+    @apply rounded w-[7px] h-[7px];
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    @apply bg-slate-200;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-400 rounded;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-slate-600;
+  }
+
+  #nprogress .bar {
+    @apply bg-primary-500;
+  }
+
+  #nprogress .spinner-icon {
+    @apply border-t-primary-500 border-s-primary-500;
+  }
+
+  /*
+   *  CUSTOM
+   */
+
+  // ...
+}
